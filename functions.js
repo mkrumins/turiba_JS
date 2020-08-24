@@ -5,8 +5,8 @@ function hide_div () { // vecais funkcijas definējums
         })
 }
 
-test1 = () => { //jaunais stils (arrow function expression)
-  //alert("This is alert 2");
+test1 = () => { //jaunais stils - arrow function expression
+  console.log("This is arrow function expression")
 }
  
 

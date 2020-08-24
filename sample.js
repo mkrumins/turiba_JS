@@ -1,9 +1,20 @@
-// Mainīgo tipi
+// Data Types
+  //Primitive
+    // - Number - (int un float)
+    // - String - (text)
+    // - Boolean - (True / False)
+    // - null - (definēts, bet bez vērtības)
+    // - undefined (nav nodefinēts)
+    // - Symbol - (simbols)
+  //Non-Primitive
+    // Object
+
+
+// Mainīgo veidi
 
 // var  - globāls 
-// let -  funbkcijas ietvaros
-// const - konstantne, nevar mainīt 
-// semikoli obligāti ?
+// let -  funkcijas ietvaros
+// const - konstante, nevar mainīt 
 
 var jaunsobjektsa  = {} // - objkekts
 var jaunsobjektsa2  = {a1:123} // objekts ar mainīgo, kam piesaistīta vērtība (atslēga:vērtība vai mainīgais:vērtība)

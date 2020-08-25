@@ -27,5 +27,18 @@ var vilciens = [1,4,10];
 vilciens[0] // pēc indexa parāda vērtību
 var years = new Array(1990, 2020); // jaunais masīva stils
 
+// -------------------------------------------
+// Creating Object
+let user = {
+  name: "Bob",
+  age: 30,
+  email: "bob.smith@hello.com",
+  location: "Berlin",
+  blogPosts: ["10 Things to see in London", "Best burgers in Paris"],
+  login: function () { // funkcija, jeb metode
+    console.log("User is logged in");
+  }
+};
 
-
+user.age = 22; // izmaina Objektā vērtību
+user["name"] = "John"; // izmaina Objektā vērtību ar []

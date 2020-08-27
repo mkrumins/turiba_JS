@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style rel="stylesheet" type="text/css">
+  .show {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    width: 300px;
+  }  
+  .target {
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-top: none;
+    width: 300px;
+    display:table-cell;
+    }
+  </style>
+
+  <title>2. patstāvīgā darba uzdevums</title>
+</head>
+<body>
+  <h1>10 HTML tagi</h1>
+  <div>
+    <div class="show">1. Element: <code>&lt;p&gt;</code></div>
+    <div class="target">The HTML <b>&lt;p&gt;</b> element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</div>
+    
+    <div class="show">2. Element: <code>&lt;div&gt;<code></div>
+    <div class="target">The HTML Content Division element (<b>&lt;div&gt;</b>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS.</div>
+  
+      
+    </div>
+    <script>
+      // Jquery - Hide & Show element
+       hide_element = () => { 
+        $(document).ready(function(){
+          $(".show").click(function() { 
+            $(".target").toggle(); 
+        });
+      });
+    };
+      hide_element()
+
+
+    </script>
+</body>
+</html>

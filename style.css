@@ -6,3 +6,18 @@ Simple selectors (select elements based on name, id, class)
   color: brown;
   padding: 10px;
 }
+#navbar-head {
+height: 50px;
+background-color: #3c4044;
+padding-top: 1px;
+}
+
+.top-nav-link {
+  color: #e1e5e7;
+  padding-right: 15px;
+}
+
+ul li{
+  display: inline;
+  list-style-type:none;
+}

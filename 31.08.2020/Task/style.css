@@ -1,0 +1,14 @@
+
+h1 {
+  color: red;
+}
+#main {
+  width: 50%; 
+}
+.title_bold {
+  font-weight: bold;
+  margin-left: 10px;
+}
+#leta {
+  font-style: italic;
+}

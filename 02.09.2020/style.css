@@ -1,0 +1,15 @@
+#header_main {
+  height: 60px;
+  background-color: cadetblue;
+  padding-top: 10px;
+}
+
+ul li{
+  list-style-type: none;
+  display:inline;
+  margin-left: 50px;
+}
+
+p {
+  color: red;
+}

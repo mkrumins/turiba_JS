@@ -1,0 +1,28 @@
+
+.general {
+  background-color:#056674;
+  margin: auto;
+  width: 40%;
+}
+
+.main-container {
+  margin-top: 100px;
+  height: 400px;
+}
+
+.footer {
+  height: 60px;
+}
+
+button {
+  height:50px;
+  border: none;
+  width: 40%;
+  cursor: pointer;
+}
+
+.content {
+  text-align:justify;
+  color: #e0ece4;
+  padding: 20px;
+}

@@ -6,7 +6,8 @@ find_span = () => {
 
 hideDiv = () => {
 // $(".hide").toggle();
-$(".hide").css("display", "none");
+//$(".hide").css("display", "none");
+$(".hide")[0].style.display = "none";
 }
 
 moveI = () => {

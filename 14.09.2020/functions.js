@@ -14,7 +14,7 @@ fibonacciGen = () => {
       if (i == (element - 1)) {
         fiboDiv.append(fibo);
       } else {
-       fiboDiv.append(fibo + ", ");
+        fiboDiv.append(fibo + ", ");
       }
     }
     else if (i == (element - 1)) {
@@ -22,4 +22,3 @@ fibonacciGen = () => {
     }
   }
 }
-

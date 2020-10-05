@@ -1,0 +1,19 @@
+#main_cont {
+  margin-top: 150px;
+}
+#logo_img {
+  margin: 50px;
+  height: 35%;
+}
+
+.redColor {
+  color: red;
+}
+
+/* input:hover {
+  background: lightskyblue;
+}
+
+input:focus {
+  background:mediumspringgreen;
+} */

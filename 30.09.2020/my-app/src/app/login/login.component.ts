@@ -2,6 +2,7 @@
 import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'services/auth.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -11,9 +12,14 @@ import { environment } from 'src/environments/environment';
 })
 export class LoginComponent implements OnInit { // funkcijām jāiet component klasē
 
-  constructor(private router:Router) { }
+  constructor(private router: Router, private authService:AuthService) { }
 
   ngOnInit(): void {
+    // let username = sessionStorage.getItem("username");
+    if (this.authService.isUsernameCorrect())
+      this.router.navigateByUrl("/home");
+    else
+      sessionStorage.clear();
   }
 
 
@@ -37,7 +43,7 @@ export class LoginComponent implements OnInit { // funkcijām jāiet component k
         this.page.showError = true;
       } else {
         this.page.showError = false;
-        environment.userName = "admin"; // piefiksē lietotāju ?
+        sessionStorage.setItem("username", login);
         this.router.navigateByUrl("/home"); // redirects uz /home, kas apstrādājas šīs klases constructorā
       }
     }

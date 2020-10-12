@@ -12,7 +12,9 @@ import { environment } from 'src/environments/environment';
 })
 export class LoginComponent implements OnInit { // funkcijām jāiet component klasē
 
-  constructor(private router: Router, private authService:AuthService) { }
+  constructor(
+    private router: Router, 
+    private authService:AuthService) { }
 
   ngOnInit(): void {
     // let username = sessionStorage.getItem("username");

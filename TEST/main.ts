@@ -46,5 +46,44 @@ enum bonusClass2 {
 }
 
 
-let displayResults = new employees ("Project maneger", 2, bonusClass2.bClass2, 500);
+let displayResults = new employees("Project maneger", 2, bonusClass2.bClass2, 500);
+
+// ------------------ Ternary Operator 
+// if else as >> ? and : 
+// 
+
+let isLocked = false;
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+
+// same as
+
+if (isLocked) {
+  console.log('You will need a key to open the door.');
+} else {
+  console.log('You will not need a key to open the door.');
+}
+
+// ------------------ Truthy and Falsy Assignment
+
+let tool = 'marker';
+
+// Use short circuit evaluation to assign  writingUtensil variable below:
+// if writingUtensil = tool then tool="marker", else "pen"
+let writingUtensil = tool || "pen";
+
+console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+// ----------------- Default Parameters
+
+function makeShoppingList(item1:string = "milk", item2:string = "bread", item3:string = "eggs"){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+
+makeShoppingList() // paņems noklusētos
+makeShoppingList("chicken","icecream","potato") // parādīs aktuālos
+
+
+
 

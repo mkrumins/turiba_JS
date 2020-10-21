@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { FormsModule } from '@angular/forms';
+import { CheckCharPipe } from './custom_pipes/check-char.pipe';
 
 
 @NgModule({
@@ -15,11 +17,13 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
     LoginComponent,
     HomepageComponent,
     RegistrationComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
+    CheckCharPipe // custom pipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

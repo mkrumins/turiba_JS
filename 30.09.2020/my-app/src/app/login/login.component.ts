@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit { // funkcijām jāiet component k
   methods = {
     onLoginClick: () => {
       // let login = $("#loginId").value();
-      let login = (document.getElementById("loginId") as HTMLInputElement).value;
+      let login = (document.getElementById("loginId") as HTMLInputElement).value; 
       let password = (document.getElementById("passwordId") as HTMLInputElement).value;
 
       if (login != this.admin.login || password != this.admin.passw) {

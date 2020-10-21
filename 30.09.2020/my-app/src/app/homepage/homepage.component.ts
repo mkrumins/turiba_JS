@@ -55,4 +55,10 @@ export class HomepageComponent implements OnInit {
   getThings = {
     md_value: ""
   }
+
+  // logout = {
+  //   onLogoutClick: () => {
+  //     sessionStorage.removeItem("username");
+  //   }
+  // }
 }

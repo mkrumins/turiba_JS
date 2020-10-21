@@ -1,0 +1,17 @@
+
+<div class="container p-4">
+  <div class="row">
+    <div class="col">
+      <div><a routerLink="/home">Back</a></div>
+      <button (click)="onClickMe_Clicked()" type="submit" class="btn btn-primary">Click me</button>
+      <div *ngIf="paraditCiparus">ID: 88302020</div>
+      <div *ngIf="!paraditCiparus">Name: John</div>
+    </div>
+  </div>
+</div>
+
+<ul>
+  <li *ngFor="let skaistumaNosaukums of arr" [ngClass]="checkForLiza(skaistumaNosaukums)"> {{skaistumaNosaukums}} </li>
+</ul>
+
+<span [ngStyle]="getStyle()">Hello</span>

@@ -11,25 +11,26 @@
           <div class="col col-1"></div>
           <div class="col">
             <!-- <form> -->
-              <div class="form-group">
-                <p class="h3">User Login</p>
-                <p class="text-secondary">Enter your login details below</p>
-                <br>
-                <label for="exampleInputEmail1">Login ID</label>
-                <input placeholder="Enter Username" class="form-control" id="loginId">
+            <div class="form-group">
+              <p class="h3">User Login</p>
+              <p class="text-secondary">Enter your login details below</p>
+              <br>
+              <label for="exampleInputEmail1">Login ID</label>
+              <input placeholder="Enter Username" class="form-control" id="loginId">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input (keyup.enter)="methods.onLoginClick()" placeholder="Enter Password" type="password"
+                class="form-control" id="exampleInputPassword1" id="passwordId">
+            </div>
+            <button (click)="methods.onLoginClick()" type="submit" class="btn btn-primary">Login</button>
+            <br><br>
+            <!-- ngIf - A structural directive that conditionally includes a template based on the value of an expression coerced to Boolean. When the expression evaluates to true, Angular renders the template provided in a then clause, and when false or null, Angular renders the template provided in an optional else clause -->
+            <div class="row" *ngIf="page.showError">
+              <div class="col-sm-12 redColor">
+                {{page.errorMessage}}
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input (keyup.enter)="methods.onLoginClick()" placeholder="Enter Password" type="password" class="form-control" id="exampleInputPassword1" id="passwordId">
-              </div>
-              <button (click)="methods.onLoginClick()" type="submit" class="btn btn-primary">Login</button>
-              <br><br>
-              <!-- ngIf - A structural directive that conditionally includes a template based on the value of an expression coerced to Boolean. When the expression evaluates to true, Angular renders the template provided in a then clause, and when false or null, Angular renders the template provided in an optional else clause -->
-              <div class="row" *ngIf="page.showError">
-                <div class="col-sm-12 redColor"> 
-                    {{page.errorMessage}}
-                </div>
-            </div>  
+            </div>
             <!-- </form> -->
           </div>
           <div class="col col-1"></div>

@@ -9,6 +9,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { FormsModule } from '@angular/forms';
 import { CheckCharPipe } from './custom_pipes/check-char.pipe';
+import { TempComponent } from './temp/temp.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CheckCharPipe } from './custom_pipes/check-char.pipe';
     HomepageComponent,
     RegistrationComponent,
     ErrorpageComponent,
-    CheckCharPipe // custom pipe
+    CheckCharPipe,
+    TempComponent // custom pipe
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,5 @@
+import { HttpClient } from '@angular/common/http';
+import { flatten } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,20 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TempComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+
+  }
 
   ngOnInit(): void {
+    this.mainCounter();
+    setTimeout(() => {
+      this.showLoading = false
+    }, 5000);
   }
-  
-  arr = ["Anna", "Victoria", "Jelizaveta", "Olga"]
 
+  FirstNameArr = ["Anna", "Victoria", "Elizabete", "Olga"]
   checkForLiza = (vards: string) => {
     if (vards == null) {
       alert("Hjuston, mums ir problemas");
       return [];
     }
     else {
-      if (vards == "Jelizaveta")
+      if (vards == "Elizabete")
         return ["uniq"];
       else
         return ["red"];
@@ -28,7 +35,7 @@ export class TempComponent implements OnInit {
   }
 
   getStyle = () => {
-    return { color: "pink", background: "orange" };
+    return { color: "firebrick" };
     let a = "3432432";
     let template = new RegExp("^[a-zA-Z0-9\.\-\_]+[@]{1}[a-zA-Z0-9]+\.{1}[a-zA-Z]{2,3}$");
     let isMatch = template.test(a); // true vai false
@@ -36,7 +43,31 @@ export class TempComponent implements OnInit {
 
   paraditCiparus = true;
   onClickMe_Clicked = () => {
-  this.paraditCiparus = !this.paraditCiparus;//true=>false
+    this.paraditCiparus = !this.paraditCiparus;//true=>false 
   }
 
+
+  showLoading = true;
+  counter = 5;
+  test1 = () => {
+
+    this.showLoading=true;
+    this.http.get("https://gorest.co.in/public-api/users")
+      .toPromise().then((result) => {
+        console.log(result);
+      }).finally (() => {
+        this.showLoading=false;
+      })
+  }
+
+  mainCounter = () => {
+    if (this.counter > 0) {
+      setTimeout(() => {
+        this.counter--;
+        this.mainCounter();
+      }, 1000);
+
+
+    }
+  }
 }

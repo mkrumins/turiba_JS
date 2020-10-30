@@ -4,7 +4,7 @@
       <a routerLink="/signup">Create account</a>
     </div>
     <div class="col offset-8">
-      User: <b>{{page.username | titlecase}}</b> | <a routerLink="/login" >Logout</a>
+      User: <b>{{page.username | titlecase}}</b> | <a routerLink="/login" (click)="method3.Logout()">Logout</a>
     </div>
   </div>
 </div>

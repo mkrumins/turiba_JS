@@ -1,17 +1,27 @@
-
 <div class="container p-4">
   <div class="row">
     <div class="col">
       <div><a routerLink="/home">Back</a></div>
+      <div class="pt-2">
+        <span [ngStyle]="getStyle()">Click button to change DIV conntent (ngStyle / *ngIf )</span>
+      </div>
       <button (click)="onClickMe_Clicked()" type="submit" class="btn btn-primary">Click me</button>
       <div *ngIf="paraditCiparus">ID: 88302020</div>
       <div *ngIf="!paraditCiparus">Name: John</div>
+
+      <div class="p-4">
+        *ngFor loop example
+        <ul>
+          <li *ngFor="let skaistumaNosaukums of FirstNameArr" [ngClass]="checkForLiza(skaistumaNosaukums)">
+            {{skaistumaNosaukums}} </li>
+        </ul>
+      </div>
     </div>
   </div>
+  <div *ngIf="showLoading">
+    Loading.... <span>{{counter}}</span>
+  </div>
+  <div *ngIf="!showLoading">
+    <button class="btn btn-primary" (click)="test1()">Click me</button>
+  </div>
 </div>
-
-<ul>
-  <li *ngFor="let skaistumaNosaukums of arr" [ngClass]="checkForLiza(skaistumaNosaukums)"> {{skaistumaNosaukums}} </li>
-</ul>
-
-<span [ngStyle]="getStyle()">Hello</span>

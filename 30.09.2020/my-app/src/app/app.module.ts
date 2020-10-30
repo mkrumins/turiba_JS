@@ -10,7 +10,7 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { FormsModule } from '@angular/forms';
 import { CheckCharPipe } from './custom_pipes/check-char.pipe';
 import { TempComponent } from './temp/temp.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { TempComponent } from './temp/temp.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

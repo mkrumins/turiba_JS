@@ -61,4 +61,9 @@ export class HomepageComponent implements OnInit {
   //     sessionStorage.removeItem("username");
   //   }
   // }
+  method3 = {
+    Logout: () => {
+      sessionStorage.removeItem("username");
+    }
+  }
 }

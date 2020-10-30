@@ -1,0 +1,31 @@
+
+.bg {
+  background-image: url("/assets/bg_home-c.jpg");
+  
+  height: 770px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#button {
+  padding-top: 100px;
+}
+
+#navbar_b {
+  border-bottom: solid;
+  border-width: thin;
+  border-color:darkgrey;
+
+}
+
+#nice {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+}
+
+.main_color {
+  background:#9ab173 ;
+}

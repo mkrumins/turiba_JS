@@ -25,7 +25,6 @@
             </div>
             <button (click)="methods.onLoginClick()" type="submit" class="btn btn-primary">Login</button>
             <br><br>
-            <!-- ngIf - A structural directive that conditionally includes a template based on the value of an expression coerced to Boolean. When the expression evaluates to true, Angular renders the template provided in a then clause, and when false or null, Angular renders the template provided in an optional else clause -->
             <div class="row" *ngIf="page.showError">
               <div class="col-sm-12 redColor">
                 {{page.errorMessage}}

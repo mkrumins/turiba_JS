@@ -6,7 +6,10 @@ First Steps:
   * [X] routing
     * [X] default page (home)
     * [X] error page
+    * [X] booking page
+    * [ ] admin panel
 
 Design:
-  * [ ] Find saple page
-  * [ ] 
+  * [X] Find saple page 
+  * [X] bootstrap
+  * [X] 

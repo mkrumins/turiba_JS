@@ -1,0 +1,29 @@
+.stl {
+  width: 25em;
+  padding: 10px;
+}
+
+.pos {
+  position: absolute;
+  top: 75%;
+  width: 60%;
+  text-align: center;
+}
+.available {
+
+  background-color:#9ab173;
+}
+
+.notavailable {
+  background-color:#333b3e;
+}
+
+.free {
+  background-color:#6e654f;
+}
+
+#navbar_b {
+  border-bottom: solid;
+  border-width: thin;
+  border-color:darkgrey;
+}

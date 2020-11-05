@@ -61,14 +61,15 @@
           </div>
           <div class="form-group col-md-3">
             <label for="children">Children</label>
-            <input type="number" class="form-control" id="children" placeholder="0">
+            <input type="number" formControlName="children"
+            [ngClass]="{'is-invalid': form.get('children').touched && form.get('children').invalid}" class="form-control" id="children">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="dateIn">Check In Date</label>
-            <input class="form-control" type="date" formControlName="idateIn"
-            [ngClass]="{'is-invalid': form.get('idateIn').touched && form.get('idateIn').invalid}" id="idateIn">
+            <input class="form-control" type="date" formControlName="dateIn"
+            [ngClass]="{'is-invalid': form.get('dateIn').touched && form.get('dateIn').invalid}" id="dateIn">
           </div>
           <div class="form-group col-md-6">
             <label for="dateOut">Check Out Date</label>
